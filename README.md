@@ -28,6 +28,43 @@ Edit these lines to customize parts of the template with your own information:
 \newcommand{\authorConcentration}{Software Engineering}
 ```
 
+### File: [`masters_thesis_slides.tex`](./masters_thesis_slides.tex)
+
+This is the secondary document. It is a template for creating a PDF of slides to be used to present your thesis ideas.
+
+We are using [Beamer](https://www.overleaf.com/learn/latex/Beamer) to format the document. Beamer is a powerful and flexible LaTeX class to create great looking presentations.
+
+Edit these lines to customize parts of the template with your own information:
+
+```
+% The title of the paper.
+\newcommand{\paperTitle}{My Thesis Title}
+
+% The name of the author.
+\newcommand{\paperAuthor}{Alison Major}
+
+% The name of the author.
+\newcommand{\authorInstitute}{Lewis University}
+```
+
+You can edit the theme used in these lines:
+
+```
+\usetheme{Madrid}
+\usecolortheme{beaver}
+```
+
+There are a number of galleries available to review theme options. Here is the [gallery hosted by Overleaf](https://www.overleaf.com/gallery/tagged/presentation).
+
+As with the main document, we also set the image location:
+
+```
+% Set graphics location
+\graphicspath{ {Images/} }
+```
+
+The current year will be automatically populated.
+
 ### Folder: [`Images/`](./Images)
 
 Place any images for your document here. This is where the graphics plugin will look for images. This directory is set in the `masters_thesis.tex` file:
